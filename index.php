@@ -1,7 +1,4 @@
 <?php
-/* 
- *
- */
 
 require('core/core.php'); //this include all var needed
 
