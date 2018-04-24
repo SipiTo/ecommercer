@@ -13,7 +13,9 @@ function goLogin(){
         result += '<p><strong>Estamos redireccionando</strong></p>';
         result += '</div>';
         __('_AJAX_LOGIN_').innerHTML = result;
-        location.reload();
+        //location.reload();
+        //window.location.replace("?view=index");
+        window.location.href = "http://localhost/ecommercer/";
       }else {
         __('_AJAX_LOGIN_').innerHTML = connect.responseText;
       }

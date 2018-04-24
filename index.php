@@ -1,6 +1,7 @@
 <?php
 
-require('core/core.php'); //this include all var needed
+//this include all var needed
+require('core/core.php');
 
 if (isset($_GET['view'])) {
 

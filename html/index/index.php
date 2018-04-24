@@ -4,13 +4,15 @@
 
 	<div class="container-index">
 		<div class="log">
+			<?php
+				if(isset($_SESSION['app_id'])){
 
-			<a href="?view=login">
-				<button type="button" class="btn btn-default btn-success btn-block">
-					<span class="glyphicon glyphicon-off"></span>Login
-				</button>
-			</a>
+					echo '<a href="?view=logout">'.strtoupper($_user[$_SESSION['app_id']]['user']).'</a>';
 
+				}else{
+					echo '<a href="?view=login">login</a>';
+				}	
+			?>
 		</div>
 	</div>
 
